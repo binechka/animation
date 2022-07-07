@@ -1,0 +1,89 @@
+.body{
+    background-color: blanchedalmond;
+}
+
+.image {
+    background-color: #fff;
+    
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 2px solid peachpuff ;
+    height: 1200px;
+    position: relative;
+}
+
+.image-holder {
+    position: absolute;
+    border: none;
+    background-color: #fff;
+    animation: 0.5s linear infinite both;
+        
+}
+
+.car {
+top: 0;
+right: 0;
+transform: translateY(50%);
+
+}
+@keyframes image-holder {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
+.tree {
+top: 50%;
+right: 50%;
+transform: translateX(-50%);
+}
+.cloud {
+top: 0;
+left: 0;
+transform: translate(50%, 50%);
+}
