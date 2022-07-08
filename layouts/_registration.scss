@@ -1,0 +1,31 @@
+.registration {
+  background-color: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 0px 0px 150px;
+  transform: rotate(90deg);
+}
+body {
+  background-color: teal;
+}
+.registration__data {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #2e2520;
+}
+
+.registration_description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #2e2520;
+}
