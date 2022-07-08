@@ -2,6 +2,8 @@
   width: 280px;
   height: 340px;
   @media screen and (min-width: 768px) {
+    height: 580px;
+    width: 225px;
     display: flex;
     flex-direction: row;
     gap: 14px;
@@ -9,6 +11,9 @@
 }
 .price__card {
   padding: 20px 20px;
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+  }
 
   background: #fef3e4;
   border-radius: 40px;
