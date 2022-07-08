@@ -58,13 +58,72 @@ html {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .button__link {
   text-decoration: none;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover,
 .button:focus {
   background-color: #2e2520;
   color: #ab816c;
+}
+
+.price__cards {
+  width: 280px;
+  height: 340px;
+}
+@media (min-width: 768px) {
+  .price__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.price__card {
+  padding: 20px 20px;
+  background: #fef3e4;
+  border-radius: 40px;
+}
+
+.price__card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.price__name {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #2e2520;
+}
+
+.price__desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2e2520;
+}
+
+.price__item:last-child {
+  margin-bottom: 32px;
+}
+
+.price__item:not(:last-child) {
+  margin-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */
