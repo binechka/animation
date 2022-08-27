@@ -5,182 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
-      <button class="image-holder car" type="button">
-        <img
-          class="image"
-          src="./image/IMG_1229.png"
-          alt="машинка"
-          width="300px"
-        />
-      </button>
-      <button class="image-holder tree" type="button">
-        <img
-          class="image"
-          src="./image/IMG_1230.png"
-          alt="деревце"
-          width="200px"
-        />
-      </button>
-      <button class="image-holder cloud" type="button">
-        <img
-          class="image"
-          src="./image/IMG_1231.png"
-          alt="хмаринка"
-          width="150px"
-        />
-      </button>
-      <p class="txt">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-        officia, est quasi minima velit libero earum veniam eligendi ratione
-        repellendus consectetur eum error! Minima modi unde, quibusdam
-        repudiandae expedita provident?
-      </p>
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link" href="">
-            <svg class="socials__icon" width="16" height="16">
-              <use href="./image/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="">
-            <svg class="socials__icon" width="16" height="16">
-              <use href="./image/sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="">
-            <svg class="socials__icon" width="16" height="16">
-              <use href="./image/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <button type="button" class="open-button">open</button>
+    <div class="backdrop-is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn">
+          <svg class="close-icon" width="25" height="25">
+            <use href="./image/svg/image (8).svg#icon-close"></use>
+          </svg>
+        </button>
+        <img class="ltl-img" src="./image/pic circle.png" alt="little-img" />
+        <div class="parts">
+          <div class="first-part">
+            <img class="big-img" src="./image/pic.png" alt="big-img" />
+          </div>
+          <div class="second-part">
+            <ul class="modal-list list">
+              <li class="modal-item">
+                <h2 class="modal-title">INFO</h2>
+                <p class="modal-txt">
+                  Atlas Weekend is the largest music festival in Ukraine. <br />
+                  More than 200 artists will <br />
+                  create a proper music festival atmosphere on 10 stages
+                </p>
+              </li>
+              <li class="modal-item">
+                <h2 class="modal-title">WHEN</h2>
+                <p class="modal-txt">
+                  2021-06-09 <br />
+                  20:00 (Kyiv/Ukraine)
+                </p>
+              </li>
+              <li class="modal-item">
+                <h2 class="modal-title">WHERE</h2>
+                <p class="modal-txt">Kyiv, Ukraine <br />VDNH</p>
+              </li>
+              <li class="modal-item">
+                <h2 class="modal-title">WHO</h2>
+                <p class="modal-txt">The Black Eyed Peas</p>
+              </li>
 
-      <div>
-        <a class="button button__link link" href="#Register">Register</a>
-        <button class="button" type="submit">Register</button>
-        <button class="button" type="submit">Send</button>
-      </div>
-      <div>
-        <form class="form" id="Register">
-          <input type="mail" id="mail" name="mail" />
-          <label for="mail">Email</label>
-        </form>
+              <li class="modal-item">
+                <h2 class="modal-title">PRICES</h2>
+                <ul class="buy-list list">
+                  <li class="buy-item">
+                    <img src="./image/ticket1.png" alt="ticket" />
+                    <p class="modal-txt">Standart 300-500 UAH</p>
+                  </li>
+                  <li class="buy-item">
+                    <a class="buy-link link" href="">BUY TICKETS</a>
+                  </li>
+
+                  <li class="buy-item">
+                    <img src="./image/ticket1.png" alt="ticket" />
+                    <p class="modal-txt">VIP 1000-1500 UAH</p>
+                  </li>
+                  <li class="buy-item">
+                    <a class="buy-link link" href="">BUY TICKETS</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button type="button" class="author-button">
+          MORE FROM THIS AUTHOR
+        </button>
       </div>
     </div>
-    <!-- Price -->
-    <section class="Price">
-      <div class="container">
-        <h2 class="price__title tite">Price</h2>
-        <ul class="price__cards list">
-          <li class="price__card">
-            <h3 class="price__name">Easy start</h3>
-            <ul class="price__desc list">
-              <li class="price__item">-features of yeast dough preparation</li>
-              <li class="price__item">
-                -preparation of liquid caramel for stuffing
-              </li>
-              <li class="price__item">
-                -preparation of raspberry and strawberry filling
-              </li>
-              <li class="price__item">-fry and glaze donuts</li>
-            </ul>
-            <a class="button button__link link" href="#Register">Register</a>
-          </li>
-          <li class="price__card">
-            <h3 class="price__name">I want delicious donuts</h3>
-            <ul class="price__desc list">
-              <li class="price__item">-features of yeast dough preparation</li>
-              <li class="price__item">
-                -preparation of liquid caramel for stuffing
-              </li>
-              <li class="price__item">
-                -preparation of raspberry and strawberry filling
-              </li>
-              <li class="price__item">-melt chocolate for decoration</li>
-              <li class="price__item">-fry and glaze donuts</li>
-              <li class="price__item">
-                -donut decoration. painting and various techniques
-              </li>
-            </ul>
-            <a class="button button__link link" href="#Register">Register</a>
-          </li>
-          <li class="price__card">
-            <h3 class="price__name">Premium</h3>
-            <ul class="price__desc list">
-              <li class="price__item">-features of yeast dough preparation</li>
-              <li class="price__item">
-                -preparation of liquid caramel for stuffing
-              </li>
-              <li class="price__item">
-                -preparation of raspberry and strawberry filling
-              </li>
-              <li class="price__item">-melt chocolate for decoration</li>
-              <li class="price__item">-fry and glaze donuts</li>
-              <li class="price__item">
-                -donut decoration. painting and various techniques
-              </li>
-              <li class="price__item">
-                -After party and donut tasting with speakers
-              </li>
-              <li class="price__item">
-                -2 private lessons with one of the speakers
-              </li>
-            </ul>
-            <a class="button button__link link" href="#Register">Register</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Registration -->
-    <section class="registration">
-      <div class="container">
-        <form class="form">
-          <div class="registration__holder">
-            <h2 class="registration__title title">Registration</h2>
-            <p class="registration__data">May 23, 11:00 New York</p>
-            <p class="registration__description">
-              Apply your personal info <br />
-              for registration
-            </p>
-            <label class="form__label">
-              <input
-                class="form__input"
-                type="text"
-                name="user-name"
-                placeholder="Your name"
-              />
-            </label>
-            <label class="form__label">
-              <input
-                class="form__input"
-                type="tel"
-                name="user-phone"
-                placeholder="Phone number"
-              />
-            </label>
-            <label class="form__label">
-              <input
-                class="form__input"
-                type="email"
-                name="user-email"
-                placeholder="Email"
-              />
-            </label>
-            <button class="button registration__button" type="submit">
-              Register
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
   </body>
 </html>
